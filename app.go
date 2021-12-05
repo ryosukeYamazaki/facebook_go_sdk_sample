@@ -27,9 +27,7 @@ func PostID(workplaceURL string) string {
 	if err != nil {
 		log.Fatal(err)
 	}
-	fmt.Println(parsedUrl.Path)
 	splitedPath := strings.Split(parsedUrl.Path, "/")
-	fmt.Println(splitedPath[4])
 	// TODO error 処理
 	return splitedPath[4]
 }
