@@ -1,0 +1,4 @@
+github.com/huandu/facebook v2.3.1+incompatible h1:+F6kUqKx5TifzMg2fXYZFdA/3VVNphdNK8G4PF2ui74=
+github.com/huandu/facebook v2.3.1+incompatible/go.mod h1:wJogp9rhXUUjDuhx6ZaR5Eylx3dsJmy0zyFRaPYUq5g=
+github.com/huandu/facebook/v2 v2.5.3 h1:mEp4eAgND8WU3jXxT0UOFD1JawhJncesczh3WpIJ4cA=
+github.com/huandu/facebook/v2 v2.5.3/go.mod h1:rqIu94SVVn2xO8++Dpq5ImTwYYh29X4ec18wcevdcOw=
