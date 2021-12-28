@@ -15,10 +15,12 @@ func main() {
 	postId := PostID(permalink)
 
 	access_token := os.Getenv("ACCESS_TOKEN")
-	res, _ := fb.Get(postId, fb.Params{
-		"fields":       "message",
-		"access_token": access_token,
-	})
+	app_id := os.Getenv("APP_ID")
+	app_secrete := os.Getenv("APP_SECRET")
+	globalApp := fb.New(app_id, app_secrete)
+	globalApp.EnableAppsecretProof = true
+	session := globalApp.Session(access_token)
+	res, _ := session.Get(postId, fb.Params{"fields": "message"})
 	fmt.Println("Here is my Facebook first name:", res["message"])
 }
 
